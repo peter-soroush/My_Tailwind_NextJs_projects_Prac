@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Image from "next/image";
+import CreationImages from "@/components/modules/CreationImages";
 
 export const metadata = {
   title: "LoopStudios",
@@ -88,28 +89,14 @@ function LoopStudio() {
             </h2>
             <button className="max-md:hidden btn md:block">See ALL</button>
           </div>
-          <div className="flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8">
-            <div className="group relative overflow-hidden md:w-1/4">
-              <Image
-                src="/loopstudio/images/desktop/image-deep-earth.jpg"
-                alt="deep Earth"
-                width={500}
-                height={500}
-                className="max-md:hidden w-full duration-200 md:block group-hover:scale-110"
-              />
-
-              <Image
-                src="/loopstudio/images/mobile/image-deep-earth.jpg"
-                alt="deep Earth"
-                width={500}
-                height={500}
-                className="w-full md:hidden"
-              />
-              <div className="absolute top-0 bottom-0 right-0 left-0 bg-linear-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"></div>
-              <h5 className="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
-                Deep Earth
-              </h5>
-            </div>
+          <div className="item-container">
+            <CreationImages section="1" />
+          </div>
+          <div className="item-container mt-10">
+            <CreationImages section="2" />
+          </div>
+          <div className="flex justify-center mt-10 md:hidden">
+            <button className="btn w-full md:hidden">See ALL</button>
           </div>
         </div>
       </section>
