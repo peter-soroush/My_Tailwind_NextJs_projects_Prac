@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Bai_Jamjuree } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
+import { Alata } from "next/font/google";
 import "./globals.css";
 
 const baiJamjuree = Bai_Jamjuree({

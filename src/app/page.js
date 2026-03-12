@@ -12,6 +12,9 @@ export default function Home() {
           <li>
             <Link href="/FirstProject">First Project</Link>
           </li>
+          <li>
+            <Link href="/SecondProject">Second Project</Link>
+          </li>
         </ul>
       </div>
     </>

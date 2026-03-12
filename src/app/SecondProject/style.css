@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --grayish-blue: hsl(201, 11%, 66%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-dark-grayish-blue: var(--dark-grayish-blue);
+  --color-grayish-blue: var(--grayish-blue);
+  --color-strong-cyan: var(--strong-cyan);
+  --color-light-blue: var(--light-blue);
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+
+  --font-sans: "Josefin Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-alata: "Alata", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+body {
+}
+
+#hero {
+  background-image: url("/loopstudio/images/desktop/image-hero.jpg");
+  @media (width < 576px) {
+    background-image: url("/loopstudio/images/mobile/image-hero.jpg");
+    background-position: center;
+  }
+}

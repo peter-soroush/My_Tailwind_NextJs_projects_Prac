@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --grayish-blue: hsl(201, 11%, 66%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-dark-grayish-blue: var(--dark-grayish-blue);
+  --color-grayish-blue: var(--grayish-blue);
+  --color-strong-cyan: var(--strong-cyan);
+  --color-light-blue: var(--light-blue);
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+
+  --font-sans: "Bai Jamjuree", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  h3 {
+    @apply mb-8 text-4xl font-bold text-dark-grayish-blue md:text-5xl;
+  }
+
+  h5 {
+    @apply mb-2 text-2xl font-bold text-dark-grayish-blue;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@utility section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+@utility section-content {
+  @apply max-w-3xl mx-auto leading-9 text-center text-grayish-blue;
+}
+
+@utility button-container {
+  @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-bai-jamjuree);
+  background-image: url("/images/bg-header-desktop.png"); /* آدرس نسبت به پوشه public */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-family: var(--font-bai-jamjuree);
+    background-image: url("/images/bg-header-mobile.png");
+  }
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
