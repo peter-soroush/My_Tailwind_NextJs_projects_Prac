@@ -47,7 +47,7 @@ function page() {
       </section>
       <section id="features">
         <div className="section-container my-20">
-          <div className="relative flex flex-col md:flex-row md:space-x-32">
+          <div className="relative flex max-md:flex-col md:flex-row md:space-x-32">
             <div className="md:w-1/2 ">
               <Image
                 src="/images/image-computer.png"
@@ -152,7 +152,7 @@ function page() {
         </div>
       </section>
       <section id="references">
-        <div className="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0">
+        <div className="flex max-md:flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0">
           <Image
             src="/images/logo-google.png"
             alt="logo-google"
@@ -211,7 +211,7 @@ function page() {
       </section>
       <footer className="bg-gray-50">
         <div className="section-container">
-          <div className="flex flex-col items-center justify-between md:flex-row">
+          <div className="flex max-md:flex-col items-center justify-between md:flex-row">
             <Image
               src="/images/logo.svg"
               alt="Logo"
@@ -219,9 +219,9 @@ function page() {
               height="100"
               className="scale-50"
             />
-            <div className="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayish-blue">
-              <div className="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0">
-                <div className="flex flex-col space-y-4 text-center md:text-left">
+            <div className="flex max-md:flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayish-blue">
+              <div className="flex max-md:flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0">
+                <div className="flex flex-col space-y-4 max-md:text-center md:text-left">
                   <div>
                     <a href="#" className="hover:text-strong-cyan">
                       FAQ
@@ -233,7 +233,7 @@ function page() {
                     </a>
                   </div>
                 </div>
-                <div className="flex flex-col space-y-4 text-center md:text-left">
+                <div className="flex flex-col space-y-4 max-md:text-center md:text-left">
                   <div>
                     <a href="#" className="hover:text-strong-cyan">
                       Privacy & Policy
@@ -245,7 +245,7 @@ function page() {
                     </a>
                   </div>
                 </div>
-                <div className="flex flex-col space-y-4 text-center md:text-left">
+                <div className="flex flex-col space-y-4 max-md:text-center md:text-left">
                   <div>
                     <a href="#" className="hover:text-strong-cyan">
                       Install Guide
