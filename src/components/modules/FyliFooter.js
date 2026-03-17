@@ -8,7 +8,7 @@ function FyliFooter() {
         <div className="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0">
           <div className="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue">
             <div
-              className="w-25 h-10w  md:mb-0 bg-logo-light-mode dark:bg-logo-dark-mode bg-contain bg-no-repeat"
+              className="w-25 h-10 md:mb-0 bg-logo-light-mode dark:bg-logo-dark-mode bg-contain bg-no-repeat"
               aria-label="Logo"
             />
 

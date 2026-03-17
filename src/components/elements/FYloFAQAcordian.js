@@ -11,7 +11,7 @@ function FYloFAQAcordian() {
             {items.map((item) => (
               <div
                 className="py-1 borer-b outline-none group"
-                tabindex={item.id}
+                tabIndex={item.id}
                 key={item.id}
               >
                 <div className="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">

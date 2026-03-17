@@ -82,7 +82,7 @@ export default function Home() {
           <div className="relative w-72 h-[450px] rounded-2xl overflow-hidden shadow-lg transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:z-10">
             {/* Using fill instead of manual width/height to perfectly fit the frame */}
             <Image
-              src="/Projects/FirstProject.png"
+              src="/Projects/Fylo.png"
               alt="Clipboard Website"
               fill
               className="object-cover object-top"
