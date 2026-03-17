@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --darkBlue: hsl(217, 28%, 15%);
+  --darkBlue1: hsl(218, 28%, 13%);
+  --darkBlue2: hsl(216, 53%, 9%);
+  --darkBlue3: hsl(219, 30%, 18%);
+  --accentCyan: hsl(176, 68%, 64%);
+  --accentBlue: hsl(198, 60%, 50%);
+  --lightRed: hsl(0, 100%, 63%);
+}
+
+@theme inline {
+  --color-darkBlue: var(--darkBlue);
+  --color-darkBlue1: var(--darkBlue1);
+  --color-darkBlue2: var(--darkBlue2);
+  --color-darkBlue3: var(--darkBlue3);
+  --color-accentCyan: var(--accentCyan);
+  --color-accentBlue: var(--accentBlue);
+  --color-lightRed: var(--lightRed);
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-raleway: "Raleway", ui-sans-serif, system-ui, sans-serif;
+
+  --tracking-widest: 0.3em;
+}
+
+@theme {
+  /* Define custom background images for the Fylo project */
+  /* Using absolute paths ('/images/...') so Next.js pulls them directly from the 'public' folder */
+  --background-image-logo-dark-mode: url("/Fylo/images/logo-dark-mode.svg");
+  --background-image-logo-light-mode: url("/Fylo/images/logo-light-mode.svg");
+  --background-image-curvy-dark-mode: url("/Fylo/images/bg-curvy-dark-mode.svg");
+  --background-image-curvy-light-mode: url("/Fylo/images/bg-curvy-light-mode.svg");
+  --background-image-dots: url("/Fylo/images/bg-dots.svg");
+}
+
+/* Custom dark variant to support manual toggling via class */
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  /* You can add Fylo-specific base styles here if needed */
+}

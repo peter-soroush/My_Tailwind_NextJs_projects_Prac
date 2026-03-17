@@ -78,6 +78,23 @@ export default function Home() {
             LoopStudios Project
           </h3>
         </Link>
+        <Link href="/Fylo" className="group">
+          <div className="relative w-72 h-[450px] rounded-2xl overflow-hidden shadow-lg transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:z-10">
+            {/* Using fill instead of manual width/height to perfectly fit the frame */}
+            <Image
+              src="/Projects/FirstProject.png"
+              alt="Clipboard Website"
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 300px"
+            />
+            {/* Dark overlay that fades out on hover */}
+            <div className="absolute inset-0 bg-opacity-10 group-hover:bg-opacity-0 transition-all duration-300"></div>
+          </div>
+          <h3 className="mt-6 text-center text-xl font-bold text-gray-700 group-hover:text-amber-600 transition-colors">
+            Fylo
+          </h3>
+        </Link>
       </div>
     </main>
   );

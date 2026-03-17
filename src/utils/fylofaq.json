@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "Question": "How much storage space do I get with a new account?",
+    "Answer": "Fylo offers 2GB of highly secure cloud storage completely free when you sign up. If you need more space for your team or personal files, we offer premium plans starting at 100GB up to 2TB."
+  },
+  {
+    "id": "2",
+    "Question": "Are my files truly secure on Fylo?",
+    "Answer": "Absolutely. Security is our top priority. All files uploaded to Fylo are protected by industry-standard end-to-end encryption. We also offer two-factor authentication (2FA) to ensure that only you have access to your account."
+  },
+  {
+    "id": "3",
+    "Question": "Can I share files with people who don't have a Fylo account?",
+    "Answer": "Yes! You can easily generate a secure, shareable link for any file or folder. You can even set passwords and expiration dates on these links so your colleagues or family members can view and download the files without needing to sign up."
+  },
+  {
+    "id": "4",
+    "Question": "What devices and operating systems does Fylo support?",
+    "Answer": "Fylo is designed to let you access your files from anywhere. We have dedicated, lightning-fast applications for iOS, Android, Windows, and macOS. You can also access your entire drive from any modern web browser."
+  }
+]
